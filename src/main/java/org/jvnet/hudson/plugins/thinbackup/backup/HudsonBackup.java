@@ -216,6 +216,8 @@ public class HudsonBackup {
             backupAdditionalFiles();
         }
 
+        LOGGER.info("Backup is complete.");
+
         removeEmptyDirs(backupDirectory);
 
         if (backupType == BackupType.FULL) {
